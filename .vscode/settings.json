@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.g.dart": true,
+        "**/**.Designer.cs": true,
+        "**/20200[6-9]**.cs": true,
+        "pubspeck.lock": true
+    },
+    "hide-files.files": []
+}
