@@ -1,15 +1,39 @@
 {
     "files.exclude": {
-        "**/.git": false,
+        "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
         "**/Thumbs.db": true,
-        "**/*.g.dart": true,
         "**/**.Designer.cs": true,
+        "**/**.g.dart": true,
         "**/20200[6-9]**.cs": true,
-        "pubspeck.lock": true
+        "pubspeck.lock": true,
+        "pubspec.lock": true,
+        "android": true,
+        ".idea": true,
+        ".dart_tool": true,
+        "ios": true,
+        "linux": true,
+        "macos": true,
+        "web": true,
+        "windows": true,
+        "pokedex.iml": true
     },
-    "hide-files.files": []
+    "hide-files.files": [
+        "pubspec.lock",
+        "android",
+        ".idea",
+        ".dart_tool",
+        "ios",
+        "linux",
+        "macos",
+        "windows",
+        "pokedex.iml"
+    ],
+    "dart.runPubGetOnPubspecChanges": "never",
+    "cSpell.words": [
+        "pokeball"
+    ]
 }

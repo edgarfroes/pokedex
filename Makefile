@@ -1,5 +1,10 @@
 setup:
+	@flutter pub get
 	@dart pub global activate flutter_gen
+	@make gen
 
 gen:
-	@flutter packages pub run build_runner build
+	@dart run build_runner build --delete-conflicting-outputs --verbose --no-release
+
+watch:
+	@dart run build_runner watch --delete-conflicting-outputs
