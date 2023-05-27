@@ -11,13 +11,13 @@ import '../../design_system/all.dart';
 import 'providers/fetch_all_pokemon_provider.dart';
 import 'splash_screen.dart';
 
-class HomeScreen extends HookConsumerWidget {
+class HomeScreen extends HookWidget {
   const HomeScreen({
     super.key,
   });
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
+  Widget build(BuildContext context) {
     final shouldDisplay = useState(true);
 
     return Scaffold(

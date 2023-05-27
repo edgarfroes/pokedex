@@ -25,11 +25,10 @@ class SplashScreen extends HookConsumerWidget {
       duration: _animationDuration,
     );
 
-    final shouldRender = useRef(true);
+    final shouldRender = useState(true);
 
     animationController.addStatusListener((status) async {
       if (status == AnimationStatus.completed) {
-        await Future.delayed(const Duration(seconds: 3));
         shouldRender.value = false;
       }
     });
